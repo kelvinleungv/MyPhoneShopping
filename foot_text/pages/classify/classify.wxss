@@ -1,0 +1,36 @@
+/* classify.wxss */
+.selectList {
+  display: flex;
+  flex-direction: column;
+}
+.selectItem{
+  box-sizing: border-box;
+  flex-direction:row;
+  width:650rpx;
+}
+.selectItem::after{
+  content:"";
+  display : block;
+  clear: both;
+}
+.selectTitle{
+  text-align: center;
+  padding: 20rpx;
+  color: #8e8e8e;
+}
+.selectIconGroup{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+.selectBtn{
+  margin: 15rpx;
+  padding:0 30rpx;
+  height:70rpx;
+  line-height: 70rpx;
+  box-sizing: border-box;
+  border-radius: 70rpx;
+  color:#7ac873;
+  border: 1px solid #7ac873;
+  display:inline-block;
+}

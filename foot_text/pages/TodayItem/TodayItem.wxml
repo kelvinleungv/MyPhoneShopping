@@ -1,0 +1,70 @@
+<!--TodayItem.wxml-->
+<view class="container">
+  <!-- 底部固定栏   -->
+   <view class="box-fixed">
+    <view class="like" bindtap="thumb">
+      <image src="../../img/like01.png"></image>
+      <text>{{like}}</text>
+    </view>
+    <view class="save" bindtap="save">
+    <image src="../../img/save03.png"></image>
+      <text>{{save}}</text>
+    </view>
+  </view> 
+ <image src="../../img/food.png"  class="img"></image>
+
+
+  <!--内容  -->
+  <view class=" container content">
+    <text class="content_title">{{detail.title}}</text>
+    <view class="content_icon">
+     <view class="autor_icon">
+      <image src="../../img/tou02.png"></image>{{detail.tou}}
+     </view>
+      <view class="like_icon"><image src="../../img/like02.png"></image>{{detail.like}}</view>
+      <view class="like_icon"><image src="../../img/save04.png"></image>{{detail.save}} </view>
+    </view>  
+
+
+    <view class="food_text">{{detail.foodText}} </view>
+
+    <!--烹饪内容  -->
+    <view class="food_content">
+      <view class="fond_d">{{detail.d}}<text>{{detail.foodGrade}}</text></view>
+      <view class="fond_t">{{detail.t}}<text>{{detail.foodTime}}</text></view>
+    </view>
+
+    <!--食物清单  -->
+    <view class="food_list">
+      <view class="food_title">{{detail.foodtitle}}</view>
+      <view class="food_item" wx:for="{{detail.foodlist}}">
+        <view class="food_name">{{item.name}}</view>
+        <view class="food_ke">{{item.ke}}</view>
+      </view>
+    </view>
+
+    <!--做法步骤  -->
+    <view class="food_do">
+      <view class="food_title">{{detail.dotitle}}</view>
+      <view class="food_do" wx:for="{{detail.dolist}}">
+        <view class="food_dodo">{{item.id}}.{{item.content}}</view>
+      </view>
+    </view>
+
+    <!-- 图片分享 -->
+    <view class="share_pic">
+      <view class="food_title">{{detail.food_pic}}</view>
+      <view class="food_img_list" wx:for="{{detail.shareimg}}">
+        <image src="{{item}}"></image>
+      </view>
+    </view>
+
+
+    <!--烹饪小窍门  -->
+    <view class="tips">
+      <view class="food_title">{{detail.tips}}</view>
+      <view class="tipContent">{{detail.tipContent}}</view>
+    </view>
+  </view>
+
+</view>

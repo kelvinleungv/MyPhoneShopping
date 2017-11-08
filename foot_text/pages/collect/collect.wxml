@@ -1,0 +1,21 @@
+<!--collect.wxml-->
+<view class="container">
+  <!--用户信息  -->
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+  <!--收藏的列表  -->
+  <view class="save_list">
+      <navigator  data-id="{{item.id}}" url="../TodayItem/TodayItem?id={{id}}" class="save_item" wx:for="{{save}}">
+       <image src="{{item.imgUrl}}"></image>
+         <view class="save_content">
+             <rich-text>{{item.title}}</rich-text>
+              <view>{{item. material}}</view>
+              <view>{{item.author}}</view>
+              <text>收藏{{item.save}}</text><text> 点赞{{item.like}}</text>
+        </view>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,137 @@
+/* TodayItem.wxss */
+.box-fixed{
+  position: fixed;
+  bottom: 0;
+  left:0;
+  height: 100rpx;
+  background-color: gold;
+  color:#fff;
+  width: 100%;
+  /* display: flex;
+  flex-wrap:wrap; */
+  line-height: 100rpx;
+}
+.like,.save{
+  width: 50%;
+  float: left;
+  height: 100rpx;
+  text-align: center;
+}
+.like image,.save image{
+  width: 48rpx;
+  height: 48rpx;
+  position: relative;
+  top:12rpx;
+  padding-right: 20rpx;
+}
+.img{
+  width: 100%;
+}
+
+.content_title{
+  border-top: 2rpx solid #000;
+  border-bottom: 2rpx solid #000;
+  font-size:18pt;
+  font-weight: bold;
+  padding:25rpx 10rpx;
+  margin-top: 70rpx;
+  margin-bottom: 20rpx;
+}
+.content_icon image{
+  width: 30rpx;
+  height: 30rpx;
+}
+.autor_icon image,.like_icon image,save_icon image{
+  padding-right: 20rpx;
+}
+.autor_icon,.like_icon,save_icon{
+  float: left;
+  padding-right: 30rpx;
+  color:#ccc;
+}
+.food_text{
+  padding: 50rpx 5rpx;
+   text-indent:2em;
+   
+}
+.food_content{
+  width:100%;
+  /* line-height: 180%; */
+}
+.food_content view{
+  width:50%;
+  color:#969696;
+  /* line-height: 180%; */
+}
+.food_content view:first-child{
+  float:left;
+}
+.food_content view:last-child{
+  float:right;
+  text-align: right;
+}
+.food_title{
+  text-align: center;
+  padding: 80rpx;
+  color:#ccc;
+}
+.food_item{
+  padding:20rpx 0;
+  height: 50rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.food_name{
+  width: 50%;
+  float:left;
+  color:#ccc;
+}
+.food_ke{
+  width: 50%;
+  float:right;
+  color:#ccc;
+  text-align: right;
+}
+.food_name:after,.food_ke::after{
+  content:"";
+  display : block;
+  clear: both;
+}
+.food_dodo{
+  line-height: 80rpx;
+  color:#ccc;
+  height: 80rpx;
+  padding:20rpx 0;
+}
+
+
+.share_pic{
+  width: 100%;
+  text-align: center;
+}
+.food_img_list{
+  width: 50%;
+  height: 300rpx;
+  float: left;
+  position: relative;
+}
+.food_img_list image{
+  width: 375rpx;
+  height:300rpx;
+  box-sizing: border-box;
+  padding: 10rpx;
+
+}
+.share_pic::after{
+  content: "";
+  display: block;
+  float: both;
+}
+.tips{
+  width: 100%;
+  height: 500rpx;
+}
+.tipContent{
+   padding: 20rpx 50rpx;
+   text-indent:2em;
+
+}

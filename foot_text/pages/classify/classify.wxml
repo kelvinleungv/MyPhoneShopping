@@ -1,0 +1,41 @@
+<!--classify.wxml-->
+<view class="container">
+  <view class="selectList">
+   <view class="selectItem" >
+    <view class="selectTitle">大家都在搜</view>
+     <view class="selectIconGroup">
+      <navigator class="selectBtn" url="url"
+       wx:for="{{searchNameArr.searchOne}}">{{item.keywords}}
+      </navigator>
+     </view>
+   </view>
+
+    <view class="selectItem" >
+    <view class="selectTitle">肉类</view>
+     <view class="selectIconGroup">
+      <navigator class="selectBtn" style=" color:red;border:1px solid red;" url="url"
+       wx:for="{{searchNameArr.searchTwo}}">{{item.keywords}}
+      </navigator>
+     </view>
+   </view>
+
+    <view class="selectItem" >
+    <view class="selectTitle">热门食材</view>
+     <view class="selectIconGroup">
+      <navigator class="selectBtn" style=" color:blue;border:1px solid blue;" url="url"
+       wx:for="{{searchNameArr.searchThree}}">{{item.keywords}}
+      </navigator>
+     </view>
+   </view>
+    <view class="selectItem" >
+    <view class="selectTitle">流行学做</view>
+     <view class="selectIconGroup">
+      <navigator class="selectBtn"style=" color:gold;border:1px solid gold;" url="url"
+       wx:for="{{searchNameArr.searchFour}}">{{item.keywords}}
+      </navigator>
+     </view>
+   </view>
+  </view>
+</view>
+
+

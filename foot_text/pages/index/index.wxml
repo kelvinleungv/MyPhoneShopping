@@ -1,0 +1,36 @@
+<!--index.wxml-->
+
+<view class="container"> 
+<!--搜索栏  -->
+  <view class="section">
+    <navigator url="../search/search">
+       <input type="text" placeholder="{{placeholder}}"/> 
+      <!-- <view class="">{{placeholder}}</view> -->
+      <image src="{{img}}"></image>
+    </navigator>
+  </view>
+
+  <!--轮播图  -->
+  <swiper indicator-dots="{{indicatorDots}}" indicator-color="rgba(0, 0, 0, .3)"
+  circular ="true"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+  </swiper>
+
+  <!--详情内容  -->
+  <view class="detail">
+    <view class="TodayTitle">{{TodayTitle}}</view>
+     <view class="Today_list">
+      <navigator  class="todayItem" url="../TodayItem/TodayItem"  wx:for="{{Todaylist}}" >
+        <image src="{{item.imgUrl}}"></image>
+        <text>{{item.message}}</text> 
+      </navigator>
+    </view>
+    <view class="o">没有更多的数据</view>
+  </view>
+</view>
+

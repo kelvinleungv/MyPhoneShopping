@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/collect/collect",
+    "pages/classify/classify",
+    "pages/TodayItem/TodayItem",
+    "pages/logs/logs",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "KK_厨房",
+    "navigationBarTextStyle": "fff"
+  },
+  "tabBar": {
+    "backgroundColor": "gold",
+    "selectedColor": "black",
+    "color": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/cai01.png",
+        "selectedIconPath": "img/cai02.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "img/guo01.png",
+        "selectedIconPath": "img/guo02.png"
+      },
+      {
+        "pagePath": "pages/collect/collect",
+        "text": "收藏",
+        "iconPath": "img/save01.png",
+        "selectedIconPath": "img/save02.png"
+      }
+    ]
+  }
+}
